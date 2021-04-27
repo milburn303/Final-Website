@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+  Student Name: Eric Milburn
+  File Name: about.html
+  Current Date: 04/12/2021
+-->
+<html lang = "en">
+  <head>
+    <title>Showcase About Me</title>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="description" content="Eric Milburn's information and college experience">
+  </head>
+  <body>
+
+    <header>
+      <figcaption>
+        <h3>Mission Statement: To showcase personal and technical skills via website coding.</h3>
+      </figcaption>
+      <h1>Eric A. Milburn</h1>
+      <figure>
+        <img src = "images/Headshot.JPG" alt="Eric Milburn Headshot">
+      </figure>
+    </header>
+
+    <nav class = "tablet-desktop">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+			  <li><a href="references.html">References</a></li>
+			  <li><a href="finance.html">Financial Aid</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="mobile-nav">
+      <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+			  <a href="references.html">References</a>
+			  <a href="finance.html">Financial Aid</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776;</div>
+      </a>
+    </nav>
+
+    <!--Add Main Content Here-->
+    <main>
+      <section class="about">
+        <h1 class="center">About Me</h1><hr>
+        <h3>I grauated from South Fayette High School in 2016 and initially went to University of Pittsburgh before transferring to University of Tampa. <br> <br> I was initally a music major concentrating in jazz and classical guitar, even serving as the University's jazz pianist for a year. This is a short audio of a piece I arranged for the classical guitar ensemble:<br>
+        <audio controls="controls">
+          <source src = "media/guitar.mp3" type="audio/mp3">
+          <source src = "media/guitar.wav" type="audio/wav">
+          <p>This browser does not support this format</P>
+        </audio>
+        <br> However, I changed my major to management information systems with a minor in business analytics due to my love for data science. <br> <br> These are some relevant course taken during my time in Tampa: <hr><br>
+        <table class = "tablet-desktop" style="display:none;">
+          <caption style="font-size:1.3em;">Relevant College Courses Taken</caption>
+          <tr style="border:5px outset black;">
+            <th>Course</th>
+            <th>Semester Taken</th>
+            <th>Skills Aquired</th>
+          </tr>
+          <tr>
+            <td>Management of Information Systems</td>
+            <td class="center">Fall 2019</td>
+            <td>
+              <ul>
+                <li>How to relate information systems to business processes</li>
+                <li>Write business process models</li>
+                <li>Supply chain and resource management</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Business Intelligance and Analytics</td>
+            <td class="center">Spring 2021</td>
+            <td>
+              <ul>
+                <li>Use of data for statistical and quantitative analysis</li>
+                <li>Generate data-driven insight for devision-making and competitive strategy</li>
+                <li>Use of analytic modeling tools such as IBM SPSS Statistics and Modeler</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Data and Information Management</td>
+            <td class="center">Fall 2020</td>
+            <td>
+              <ul>
+                <li>Understand fundamental concepts of data and information systems with primary focus on database systems</li>
+                <li>Identify organizational requirements, conceptial modeling, and logical and physical database design</li>
+                <li>Use of SQL/XML and complet database administration tasks</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Systems Analysis and Design</td>
+            <td class="center">Fall 2020</td>
+            <td>
+              <ul>
+                <li>Address the key concepts of user requirements, modeling and information systems project management</li>
+                <li>Integrate concepts in analyzing and designing an information system using a prototyping approach with a rapid application development tool</li>
+                <li> Understand project feasibility analysis, project tracking, developing service requests and reporting minutes of meetings</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Enterprise Architecture and Governance</td>
+            <td class="center">Spring 2021 </td>
+            <td>
+              <ul>
+                <li>Develop system and network architectures</li>
+                <li>Compute process and security requirements, designing user interfaces and documentation, implementing systems and planning for transition and training</li>
+                <li>Earned the Information Systems Analyst(ISA) designation, an internationally recognized professional certification</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Basic (and Advanced) Application Development</td>
+            <td class="center">Fall 2020/ Spring 2021</td>
+            <td>
+              <ul>
+                <li>Learn advanced programming concepts, development of web-based client server applications and integration of applications with enterprise systems</li>
+                <li>Emphasizes structured programming and object-oriented methods in the .NET environment</li>
+                <li>Be able to read and write coding languages Java, Python, HTML, CSS, JavaScript, and Bootstrap</li>
+              </ul>
+            </td>
+          </tr>
+        </table> 
+        <div id="container">
+          <button id ="hide">Hide</button>
+          <button id ="show">Show</button>
+        </div>
+        <ol class = "mobile">
+          <li>Management of Information Systems
+            <ul>
+              <li>How to relate information systems to business processes</li>
+              <li>Write business process models</li>
+              <li>Supply chain and resource management</li>
+            </ul>
+          <li>Business Intelligance and Analytics
+            <ul>
+              <li>Use of data for statistical and quantitative analysis</li>
+              <li>Generate data-driven insight for devision-making and competitive strategy</li>
+              <li>Use of analytic modeling tools such as IBM SPSS Statistics and Modeler</li>
+            </ul>
+          </li>
+          <li>Data and Information Management
+            <ul>
+              <li>Understand fundamental concepts of data and information systems with primary focus on database systems</li>
+              <li>Identify organizational requirements, conceptial modeling, and logical and physical database design</li>
+              <li>Use of SQL/XML and complet database administration tasks</li>
+            </ul>
+          </li>
+          <li>Systems Analysis and Design
+            <ul>
+              <li>Address the key concepts of user requirements, modeling and information systems project management</li>
+              <li>Integrate concepts in analyzing and designing an information system using a prototyping approach with a rapid application development tool</li>
+              <li> Understand project feasibility analysis, project tracking, developing service requests and reporting minutes of meetings</li>
+            </ul>
+          </li>
+          <li>Enterprise Architecture and Governance
+            <ul>
+              <li>Develop system and network architectures</li>
+              <li>Compute process and security requirements, designing user interfaces and documentation, implementing systems and planning for transition and training</li>
+              <li>Earned the Information Systems Analyst(ISA) designation, an internationally recognized professional certification</li>
+            </ul>
+          </li>
+          <li>Basic (and Advanced) Application Development
+            <ul>
+              <li>Learn advanced programming concepts, development of web-based client server applications and integration of applications with enterprise systems</li>
+              <li>Emphasizes structured programming and object-oriented methods in the .NET environment</li>
+              <li>Be able to read and write coding languages Java, Python, HTML, CSS, JavaScript, and Bootstrap</li>
+            </ul>
+          </li>
+        </ol>
+        
+        <br><br><hr>I also assisted facutly in the creation of a new speicial topics in MIS course focusing on data integration with Excel and achieveing the Microsoft Office 2016 Specialist Excel Expert Certification.<br><br> I am graduating from the University of Tampa in the Spring of 2021 with honors and a GPA of 3.85. I will be looking for a job that is either remote or near the location of Charleston, SC.
+        </h3>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Copyright 2021. All Rights Reserved</p>
+      <p><a href="mailto:eric.milburn@spartans.ut.edu" class="hyperBlack">eric.milburn@spartans.ut.edu</a>
+      <a href="http://linkedin.com/in/eric-m-663341b2"><img src="images/logo.png"></a></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

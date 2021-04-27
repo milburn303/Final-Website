@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+  Student Name: Eric Milburn
+  File Name: index.html
+  Current Date: 04/10/2021
+-->
+<html lang = "en">
+  <head>
+    <title>Showcase Home</title>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eric Milburn's home page">
+  </head>
+  <body>
+
+    <header>
+      <figcaption>
+        <h3>Mission Statement: To showcase personal and technical skills via website coding.</h3>
+      </figcaption>
+      <h1>Eric A. Milburn</h1>
+      <figure>
+        <img src = "images/Headshot.JPG" alt="Eric Milburn Headshot">
+      </figure>
+    </header>
+
+    <nav class = "tablet-desktop">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+			  <li><a href="references.html">References</a></li>
+			  <li><a href="finance.html">Financial Aid</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="mobile-nav">
+      <div id="menu-links">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Me</a>
+			  <a href="references.html">References</a>
+			  <a href="finance.html">Financial Aid</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="menu-icon"  onclick="hamburger()">
+        <div>&#9776;</div>
+      </a>
+    </nav>
+    <!--Add Main Content Here-->
+    <main>
+      <h1 class="center">Home</h1><hr>
+      <article class = "grid">
+        <section style="align-self: center;">
+          <h2> Hello, my name is Eric Milburn and I am student graduating in the Spring of 2021 from the University of Tampa.<br><br>
+          My goals post-graduation are to take the knowledge and skills gained from my time at the University to become a data scientist or analyst near Charleston, SC. After some time, my hopes is I can move into data architecture and finally into a Chief Information Officer position.<br><br>
+          My hobbies include hockey, athletics, music, video games, and all things technology related.<h2>
+
+          
+        </section>
+        <section>
+          <img src="images/Family.jpg" alt="My family at my sisters graduation" class="home_pic">
+      </article>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2021. All Rights Reserved</p>
+      <p><a href="mailto:eric.milburn@spartans.ut.edu" class="hyperBlack">eric.milburn@spartans.ut.edu</a>
+      <a href="http://linkedin.com/in/eric-m-663341b2"><img src="images/logo.png"></a></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

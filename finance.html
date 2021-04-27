@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+  Student Name: Eric Milburn
+  File Name: template.html
+  Current Date: 04/10/2021
+-->
+<html lang = "en">
+  <head>
+    <title>Showcase Template</title>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eric Milburn's donator page">
+  </head>
+  <body>
+
+    <header>
+      <figcaption>
+        <h3>Mission Statement: To showcase personal and technical skills via website coding.</h3>
+      </figcaption>
+      <h1>Eric A. Milburn</h1>
+      <figure>
+        <img src = "images/Headshot.JPG" alt="Eric Milburn Headshot">
+      </figure>
+    </header>
+
+    <nav class = "tablet-desktop">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+			  <li><a href="references.html">References</a></li>
+			  <li><a href="finance.html">Financial Aid</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="mobile-nav">
+      <div id="menu-links">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Me</a>
+			  <a href="references.html">References</a>
+			  <a href="finance.html">Financial Aid</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="menu-icon"  onclick="hamburger()">
+        <div>&#9776;</div>
+      </a>
+    </nav>
+
+    <!--Add Main Content Here-->
+    <main>
+      <h1 class="center">Financial Aid</h1><hr>
+      <h3 class = "center" style="margin:auto 20%"> Hey you, do you feel like helping a recent graduate pay off some college debt? Well now is your chance! If you fill out the form below with your credit card information, I promise it will go towards relieving student debt and not beer! Pinky swear :)</h3><br>
+      <form action = "mailto:Eric.Milburn@spartans.ut.edu" method = "POST" class = "grid">
+        <fieldset>
+            <legend>Donator Information</legend>
+          <label for="fName">First Name: </label>
+            <input type="text" name="fName"id="fName">
+          <label for="lName">Last Name: </label>
+            <input type="text" name="lName"id="lName">
+          <label for="institution">Institution: </label>
+            <input type="text" name="institution"id="institution">
+          <label for="email">Email: </label>
+            <input type="email" name="email"id="email">
+          <label for="phone">Telephone: </label>
+            <input type="tel" name="phone" id="phone">
+        </fieldset>
+        <fieldset>
+            <legend>Card Information</legend>
+          <label for="cName">Name on Card: </label>
+            <input type="text" name="cName"id="cName">
+          <label for="cNum">Card Number </label>
+            <input type="number" name="cNum"id="cNum">
+          <label for="expDate">Expiration Date </label>
+            <input type="text" name="expDate"id="expDate"placeholder="MM/YY">
+          <label for="ccv">CCV: </label>
+            <input type="number" name="ccv" id="ccv">
+          <label for="amount">Amount($): </label>
+            <input type="number" name="Amount" id="Amount">
+        </fieldset>
+        <input type="submit" id="submit" value ="Submit" class="btn"> 
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; Copyright 2021. All Rights Reserved</p>
+      <p><a href="mailto:eric.milburn@spartans.ut.edu" class="hyperBlack">eric.milburn@spartans.ut.edu</a>
+      <a href="http://linkedin.com/in/eric-m-663341b2"><img src="images/logo.png"></a></p>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
+
+
